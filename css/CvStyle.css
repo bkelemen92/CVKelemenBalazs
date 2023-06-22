@@ -1,0 +1,152 @@
+﻿body {
+  font-family: "ocr-a-std", monospace;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #111111;
+}
+
+.HeroSection {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.HeroSection .HeroPic {
+  width: 40%;
+  border-radius: 5px;
+  margin: 5px;
+  border: 3px solid #FF1111;
+}
+.HeroSection .HeroDesc {
+  width: 40%;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+  background-color: gray;
+}
+.HeroSection .HeroDesc .desc-entry {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0px;
+}
+.HeroSection .HeroDesc .desc-entry .heroIcon {
+  margin-right: 5px;
+}
+.HeroSection .HeroDesc .desc-entry .desc-header {
+  font-size: 40px;
+  font-family: "ocr-a-std", monospace;
+  font-weight: 900;
+  font-style: normal;
+  color: orange;
+}
+.HeroSection .HeroDesc .desc-entry p {
+  margin: 0;
+}
+
+.CvSection .Subheader {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  border-radius: 5px;
+}
+.CvSection .Subheader .SubLogo {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.CvSection .Subheader .SubLogo #bid {
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  overflow: visible;
+}
+.CvSection .Subheader .SubLogo #bid #cid {
+  padding: 30px;
+  fill: #FF1111;
+  filter: drop-shadow(0px 0px 10px #FF1111) drop-shadow(0px 0px 10px #FF1111) drop-shadow(0px 0px 10px #FF1111);
+}
+.CvSection .Subheader .SubLogo .SubheaderLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 80px;
+  height: 80px;
+}
+.CvSection .Subheader .SubLogo .SubheaderLogo i {
+  font-size: 35px;
+  color: #02D7F2;
+  filter: drop-shadow(0px 0px 5px #02D7F2);
+}
+.CvSection .Subheader .subheader-title {
+  margin-left: 10px;
+  font-weight: 700;
+  display: flex;
+  font-style: normal;
+  font-size: 25px;
+  width: 100%;
+  color: #f2e900;
+}
+.CvSection .Subheader .subheader-title:after {
+  content: "";
+  flex-grow: 1;
+  height: 2px;
+  background: red;
+  /* border-bottom: 2px solid red; */
+  margin: auto;
+  min-width: 30px;
+  margin-left: 10px;
+  box-shadow: red 0px 0px 15px, red 0px 0px 10px, red 0px 0px 5px;
+}
+.CvSection .SectionDetails {
+  margin-left: 102px;
+  display: flex;
+  color: white;
+  /*.col-1 {
+      display: flex;
+      flex-direction: column;
+      margin-right: 10px;
+  }
+
+  .col-2 {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+  }*/
+}
+.CvSection .SectionDetails.language-details .lng-col-1 {
+  flex: 33%;
+}
+.CvSection .SectionDetails.language-details .lng-col-2 {
+  flex: 33%;
+}
+.CvSection .SectionDetails.language-details .lng-col-3 {
+  flex: 33%;
+}
+.CvSection .SectionDetails.hobby-details {
+  margin-bottom: 50px;
+}
+.CvSection .SectionDetails.hobby-details .hbb-col-1 {
+  flex: 50%;
+}
+.CvSection .SectionDetails.hobby-details .hbb-col-2 {
+  flex: 50%;
+}
+.CvSection .SectionDetails .column {
+  flex: 50%;
+}
+.CvSection .SectionDetails ul {
+  padding: 0;
+}
+.CvSection .SectionDetails ul li {
+  display: flex;
+}
+.CvSection .SectionDetails ul li .detail-col1 {
+  width: 150px;
+  font-weight: 700;
+  color: #DDDDDD;
+}
+.CvSection .SectionDetails ul li .detail-col2 {
+  color: #DDDDDD;
+}

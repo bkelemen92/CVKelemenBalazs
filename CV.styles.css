@@ -1,0 +1,282 @@
+/* /Shared/MainLayout.razor.rz.scp.css */
+.page[b-u0js59s68o] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-u0js59s68o] {
+    flex: 1;
+}
+
+.sidebar[b-u0js59s68o] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-u0js59s68o] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-u0js59s68o]  a, .top-row[b-u0js59s68o]  .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row[b-u0js59s68o]  a:hover, .top-row[b-u0js59s68o]  .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row[b-u0js59s68o]  a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-u0js59s68o] {
+        display: none;
+    }
+
+    .top-row.auth[b-u0js59s68o] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-u0js59s68o]  a, .top-row[b-u0js59s68o]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-u0js59s68o] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-u0js59s68o] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-u0js59s68o] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth[b-u0js59s68o]  a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row[b-u0js59s68o], article[b-u0js59s68o] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* /Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-j84paeed2u] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-j84paeed2u] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-j84paeed2u] {
+    font-size: 1.1rem;
+}
+
+.oi[b-j84paeed2u] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-j84paeed2u] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-j84paeed2u] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-j84paeed2u] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-j84paeed2u]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-j84paeed2u]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-j84paeed2u]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-j84paeed2u] {
+        display: none;
+    }
+
+    .collapse[b-j84paeed2u] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+    
+    .nav-scrollable[b-j84paeed2u] {
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+    }
+}
+/* /Shared/SkillBar.razor.rz.scp.css */
+/*.SkillPanel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+
+    .SkillLabel {
+        font-weight: 700;
+        min-width: 50px;
+        width: 150px;
+        color: white;
+    }
+
+    .SkillBar {
+        --percent-left-margin: 3px;
+        --percent-right-margin: 3px;
+        --percent-min-height: 10px;
+        --percent-height: 100%;
+        --percent-min-width: 10px;
+        --percent-width: 30px;
+        --percent-border-radius: 5px;
+        --percent-box-shadow: #353535 3px 3px 10px inset, #4f4f4f -3px -3px 10px inset;
+        --percent-active-box-shadow: #FFFFFF50 3px 3px 4px inset, #353535 -3px -3px 4px inset;
+        display: flex;
+        min-height: 10px;
+        height: 20px;
+        min-width: 100px;
+
+        &.Red {
+            --percent-active-bg: rgba(245, 0, 0, 1);
+
+            .percent {
+                margin-left: var(--percent-left-margin);
+                margin-right: var(--percent-right-margin);
+                min-height: var(--percent-min-height);
+                height: var(--percent-height);
+                min-width: var(--percent-min-width);
+                width: var(--percent-width);
+                border-radius: var(--percent-border-radius);
+                box-shadow: var(--percent-box-shadow);
+
+                &.active {
+                    background-color: var(--percent-active-bg);
+                    box-shadow: var(--percent-active-box-shadow);
+                    transition: all 0.15s ease-in-out;
+                }
+            }
+        }
+
+        &.Green {
+            --percent-active-bg: rgba(0, 245, 0, 1);
+
+            .percent {
+                margin-left: var(--percent-left-margin);
+                margin-right: var(--percent-right-margin);
+                min-height: var(--percent-min-height);
+                height: var(--percent-height);
+                min-width: var(--percent-min-width);
+                width: var(--percent-width);
+                border-radius: var(--percent-border-radius);
+                box-shadow: var(--percent-box-shadow);
+
+                &.active {
+                    background-color: var(--percent-active-bg);
+                    box-shadow: var(--percent-active-box-shadow);
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .SkillBar {
+            &.Red {
+                .percent {
+                    &.active {
+                        background-color: lighten(rgba(245, 0, 0, 1), 20%);
+                        transition: all 0.15s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+*/
+.SkillPanel[b-3x4vsswo0f] {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  height: 3em;
+}
+.SkillPanel .SkillLabel[b-3x4vsswo0f] {
+  color: white;
+  width: 230px;
+}
+.SkillPanel .SkillBar[b-3x4vsswo0f] {
+  height: 30px;
+  display: flex;
+}
+.SkillPanel .SkillBar .percent[b-3x4vsswo0f] {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-right: 5px;
+}
+.SkillPanel .SkillBar .percent .OuterCircle-cont[b-3x4vsswo0f] {
+  fill: #FF1111;
+  width: 20px;
+  height: 20px;
+  filter: drop-shadow(0px 0px 5px #FF1111) drop-shadow(0px 0px 5px #FF1111);
+  overflow: visible;
+}
+.SkillPanel .SkillBar .percent #b[b-3x4vsswo0f] {
+  position: absolute;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  overflow: visible;
+  visibility: collapse;
+}
+.SkillPanel .SkillBar .percent.active #b[b-3x4vsswo0f] {
+  fill: #f2e900;
+  filter: drop-shadow(0px 0px 5px #f2e900);
+  visibility: visible;
+}
+.SkillPanel:hover .SkillLabel[b-3x4vsswo0f] {
+  filter: drop-shadow(0px 0px 5px #f2e900) drop-shadow(0px 0px 5px #f2e900);
+}
+.SkillPanel:hover .SkillBar .percent #b[b-3x4vsswo0f] {
+  filter: drop-shadow(0px 0px 5px #f2e900) drop-shadow(0px 0px 5px #f2e900);
+}
